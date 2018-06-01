@@ -1,0 +1,20 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name" : "Cookies in Incognito",
+  "version" : "0.1",
+  "description" : "Allows cookies to be used on specified sites in Incognito",
+  "permissions": [ "cookies","webRequest","webRequestBlocking","storage", "tabs","<all_urls>" ],
+  "icons": { "128": "cookie.png"},
+  "browser_action": {
+    "default_icon": "cookie.png"
+  },
+   "options_ui": {
+  "page": "options.html",
+  "chrome_style": true
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}
